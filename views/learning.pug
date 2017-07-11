@@ -1,9 +1,7 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-
-  ul
-    li item 1
-    li item 2
+    input(type='text').fun-class-name#fun-id-name
+    - const anyArray = [1, 2, 3]
+    each value in anyArray
+        p= value
