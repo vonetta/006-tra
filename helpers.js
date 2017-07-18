@@ -16,6 +16,7 @@ exports.siteName = `The Retail Apocalypse`;
 
 exports.menu = [
   { slug: '/stores', title: 'Stores' },
+  { slug: '/add', title: 'Add' },
   { slug: '/tags', title: 'Tags' },
   { slug: '/top', title: 'Top' },
   { slug: '/map', title: 'Map' },
