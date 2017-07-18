@@ -4,7 +4,11 @@ exports.homePage = (req, res) => {
 };
 
 exports.addStore = (req, res) => {
-  res.render('editStore', {title: 'Add Store'});
-  // res.send('add Store');
-	// res.render('editStore');
+  res.render('editStore', { title: 'Add Store' });
+};
+
+// add this new method
+exports.createStore = (req, res) => {
+  console.log(req.body);
+  res.json(req.body);
 };

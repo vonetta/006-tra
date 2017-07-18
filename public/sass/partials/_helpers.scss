@@ -5,10 +5,11 @@
 
 .button {
   border: 0;
-  background: $danger-yellow;
+  background: $danger-red; /* update this line */
   color: $black;
   font-family: 'Hamurz';
   font-weight: 600;
+  font-size: 3rem; /* update this line */
 }
 
 .avatar {
@@ -19,7 +20,7 @@
 }
 
 .card {
-  background: $white;
+  background: $danger-yellow; // update this line
   padding: 5rem;
   box-shadow: 0 1px 10px rgba(0,0,0,0.15);
 }
