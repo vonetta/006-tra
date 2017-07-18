@@ -15,5 +15,9 @@ exports.dump = (obj) => JSON.stringify(obj, null, 2);
 exports.siteName = `The Retail Apocalypse`;
 
 exports.menu = [
-  { slug: '/stores', title: 'Stores' }
+  { slug: '/stores', title: 'Stores' },
+  { slug: '/tags', title: 'Tags' },
+  { slug: '/top', title: 'Top' },
+  { slug: '/map', title: 'Map' },
+
 ];
