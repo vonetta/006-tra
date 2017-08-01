@@ -11,7 +11,8 @@ exports.addStore = (req, res) => {
 };
 
 // add this new method
-exports.createStore = (req, res) => {
-  console.log(req.body);
-  res.json(req.body);
+exports.createStore = async (req, res) => {
+    const store = new Store(req.body);
+    await store.save();
+    res.redirect('/');
 };

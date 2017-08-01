@@ -1,6 +1,4 @@
 const mongoose = require('mongoose');
-//Capitalize the Model
-const Store = mongoose.model('Store');
 
 // Make sure we are running node 7.6+
 const [major, minor] = process.versions.node.split('.').map(parseFloat);
@@ -22,7 +20,7 @@ mongoose.connection.on('error', (err) => {
 // READY?! Let's go!
 
 // import all of our models
-require('./models/Store'); //
+require('./models/Store');
 
 
 // Start our app!
