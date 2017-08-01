@@ -3,7 +3,7 @@ const Store = mongoose.model('Store');
 
 exports.homePage = (req, res) => {
   console.log(req.name);
-  res.render('index', {title: 'Yo'});
+  res.render('index');
 };
 
 exports.addStore = (req, res) => {
@@ -14,5 +14,6 @@ exports.addStore = (req, res) => {
 exports.createStore = async (req, res) => {
     const store = new Store(req.body);
     await store.save();
-    res.redirect('/');
+	 req.flash('success', `Successfully Created ${store.name}. Care to leave a review?`);
+  res.redirect(`/store/${store.slug}`);
 };
