@@ -20,5 +20,4 @@ exports.menu = [
   { slug: '/tags', title: 'Tags' },
   { slug: '/top', title: 'Top' },
   { slug: '/map', title: 'Map' },
-
 ];

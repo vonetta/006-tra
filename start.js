@@ -1,4 +1,6 @@
 const mongoose = require('mongoose');
+//Capitalize the Model
+const Store = mongoose.model('Store');
 
 // Make sure we are running node 7.6+
 const [major, minor] = process.versions.node.split('.').map(parseFloat);

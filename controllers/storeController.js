@@ -1,6 +1,9 @@
+const mongoose = require('mongoose');
+const Store = mongoose.model('Store');
+
 exports.homePage = (req, res) => {
   console.log(req.name);
-  res.render('index');
+  res.render('index', {title: 'Yo'});
 };
 
 exports.addStore = (req, res) => {
