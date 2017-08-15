@@ -1,10 +1,17 @@
 mixin storeForm(store = {})
+
   form(action="/add" method="POST" class="card")
     label(for="name") Name
-    input(type="text" name="name")
+    input(type="text" name="name" value=(store.name))
     label(for="description") Description
     textarea(name="description")
+	
+	  //- address, lng and lat
+    label(for="address") Address
+    input(type="text" id="address" name="location[address]" value=store.location.address)
+      
     - const choices = ['Closed', 'Closing', 'Kmart', 'Sears', 'Radioshack', 'Mall']
+    - const tags = store.tags || []
     ul.tags
       each choice in choices
         .tag.tag__choice
